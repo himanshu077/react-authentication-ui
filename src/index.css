@@ -21,11 +21,29 @@ body {
   color: var(--black);
 }
 
-
 :root {
-  --primary: #312ECB;
-  --primary-light: #007AFF;
+  --primary: #312ecb;
+  --primary-light: #007aff;
   --secondary: #e8faf7;
-  --white: #FFFFFF;
+  --white: #ffffff;
   --black: black;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+}
+
+.divider-line {
+  border: none;
+  border-top: 1px solid #a2a2a2;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.divider-text {
+  background-color: #fff;
+  padding: 0 10px;
+  position: relative;
 }
