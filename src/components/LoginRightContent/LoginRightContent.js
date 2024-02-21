@@ -3,6 +3,7 @@ import { Box, Button, TextField, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { inputLabelClasses } from "@mui/material/InputLabel";
 import Google from "../../assets/svg/Google.svg";
+import Apple from "../../assets/svg/Apple.svg";
 import PrimaryButton from "../../common/PrimaryButton/PrimaryButton";
 import DividerLine from "../../common/DividerLine/DividerLine";
 
@@ -41,7 +42,7 @@ const LoginRightContent = () => {
             }}
             sx={{
               "& input": {
-                padding: "12px",
+                padding: "15px",
               },
             }}
           />
@@ -61,19 +62,21 @@ const LoginRightContent = () => {
             }}
             sx={{
               "& input": {
-                padding: "12px",
+                padding: "15px",
               },
             }}
             type="password"
           />
         </Box>
 
-        <Typography
-          variant="inherit"
-          className=" !text-[--primary] !pt-5 !text-right !pb-2 !text-[14px] inter400 "
-        >
-          Forgot Password
-        </Typography>
+        <Link to="/forgot-password">
+          <Typography
+            variant="inherit"
+            className=" !text-[--primary] !pt-5 !text-right !pb-2 !text-[14px] inter400 "
+          >
+            Forgot Password
+          </Typography>
+        </Link>
 
         <Box className="!mt-5">
           <PrimaryButton buttonName="Login" className="!py-4 !w-full" />
@@ -96,6 +99,11 @@ const LoginRightContent = () => {
             variant="outlined"
             className="!py-[15px] !text-[--black] !flex !gap-2 !items-center !text-base !font-bold !capitalize !rounded-md !border-2 !border-black"
           >
+               <img
+              alt="SideImage"
+              src={Apple}
+              className="!w-auto !h-auto !relative !bottom-[2px]"
+            />{" "}
             Continue with Apple
           </Button>
         </Box>
