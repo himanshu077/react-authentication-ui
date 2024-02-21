@@ -1,17 +1,17 @@
-import { Box, Typography } from '@mui/material'
-import React from 'react'
+import Authonicate from "../../layout/Authonicate";
+import React from "react";
+import ForgotPasswordContent from "../../components/ForgotPasswordContent/ForgotPasswordContent";
+import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpContent";
 
 const ForgotPassword = () => {
   return (
-    <Box>
-    <Typography
-      variant="h3"
-      className="!bg-yellow-600 !text-white !font-bold text-2xl p-10"
-    >
-      Forgot password Page
-    </Typography>
-  </Box>
-  )
-}
+    <>
+      <Authonicate
+        LeftContent={<LeftSignUpContent />}
+        RightContent={<ForgotPasswordContent />}
+      />
+    </>
+  );
+};
 
-export default ForgotPassword
+export default ForgotPassword;

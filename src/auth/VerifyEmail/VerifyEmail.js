@@ -1,17 +1,17 @@
-import { Box, Typography } from '@mui/material'
-import React from 'react'
+import Authonicate from "../../layout/Authonicate";
+import React from "react";
+import VerifyEmailContent from "../../components/VerifyEmailContent/VerifyEmailContent";
+import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpContent";
 
 const VerifyEmail = () => {
   return (
-    <Box>
-    <Typography
-      variant="h3"
-      className="!bg-blue-600 !text-white !font-bold text-2xl p-10"
-    >
-      Verfiy Email Page
-    </Typography>
-  </Box>
-  )
-}
+    <>
+      <Authonicate
+        LeftContent={<LeftSignUpContent />}
+        RightContent={<VerifyEmailContent />}
+      />
+    </>
+  );
+};
 
-export default VerifyEmail
+export default VerifyEmail;
