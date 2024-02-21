@@ -21,11 +21,11 @@ const ForgotPasswordContent = () => {
         </Box>
 
         <Box className="!grid !gap-4 !mt-16">
-          <TextField
+        <TextField
             fullWidth
             size="small"
             autoComplete="off"
-            placeholder="Email"
+            placeholder="Password"
             InputLabelProps={{
               sx: {
                 [`&.${inputLabelClasses.shrink}`]: {
@@ -36,14 +36,15 @@ const ForgotPasswordContent = () => {
             }}
             sx={{
               "& input": {
-                padding: "16px",
+                padding: "15px",
               },
             }}
+            type="password"
           />
         </Box>
 
         <Box className="!mt-7">
-          <Link to="/verify-email">
+          <Link to="/check-email">
             <PrimaryButton buttonName="Send" className="!py-4 !w-full" />
           </Link>
         </Box>

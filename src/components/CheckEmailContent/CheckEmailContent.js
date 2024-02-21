@@ -25,7 +25,7 @@ const CheckEmailContent = () => {
           </Typography>
 
           <Box className="!mt-5">
-            <Link to="/check-email">
+            <Link to="/verify-email">
               <PrimaryButton
                 buttonName="Resend Email"
                 className="!py-4 !w-full"
