@@ -43,7 +43,7 @@ const SignupRightContent = () => {
               }}
               sx={{
                 "& input": {
-                  padding: "12px",
+                  padding: "15px",
                 },
               }}
             />
@@ -63,7 +63,7 @@ const SignupRightContent = () => {
               }}
               sx={{
                 "& input": {
-                  padding: "12px",
+                  padding: "15px",
                 },
               }}
             />
@@ -83,7 +83,7 @@ const SignupRightContent = () => {
             }}
             sx={{
               "& input": {
-                padding: "12px",
+                padding: "15px",
               },
             }}
           />
@@ -103,7 +103,7 @@ const SignupRightContent = () => {
             }}
             sx={{
               "& input": {
-                padding: "12px",
+                padding: "15px",
               },
             }}
             type="password"
