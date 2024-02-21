@@ -4,11 +4,11 @@ import { Box } from "@mui/material";
 const Authonicate = ({ LeftContent, RightContent }) => {
   return (
     <Box className="!flex !flex-row">
-      <Box className="hidden md:block md:basis-1/2 overflow-hidden sm:h-screen">
+      <Box className=" block lg:basis-1/2 overflow-hidden sm:h-screen">
         {LeftContent}
       </Box>
 
-      <Box className="md:basis-1/2 !w-full !max-w-[554px] !m-auto border-2 !border-red-600">
+      <Box className="lg:basis-1/2 !w-full !max-w-[570px] !m-auto md:!px-8 px-4 ">
         {RightContent}
       </Box>
     </Box>
