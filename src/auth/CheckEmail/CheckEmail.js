@@ -1,17 +1,17 @@
 import Authonicate from "../../layout/Authonicate";
 import React from "react";
-import ForgotPasswordContent from "../../components/ForgotPasswordContent/ForgotPasswordContent";
+import CheckEmailContent from "../../components/CheckEmailContent/CheckEmailContent";
 import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpContent";
 
-const ForgotPassword = () => {
+const CheckEmail = () => {
   return (
     <>
       <Authonicate
         LeftContent={<LeftSignUpContent />}
-        RightContent={<ForgotPasswordContent />}
+        RightContent={<CheckEmailContent />}
       />
     </>
   );
 };
 
-export default ForgotPassword;
+export default CheckEmail;

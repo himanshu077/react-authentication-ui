@@ -5,7 +5,7 @@ const DividerLine = () => {
   return (
     <Box className="divider !my-8  ">
     <hr className="divider-line text-[#424141]" />
-    <span className="divider-text !font-semibold">or</span>
+    <span className="divider-text !font-semibold Inter500">or</span>
   </Box>
   )
 }
