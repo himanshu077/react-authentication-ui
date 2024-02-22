@@ -1,20 +1,39 @@
-import React from "react";
-import { Box, Button, TextField, Typography } from "@mui/material";
+import React, { useState } from "react";
+import {
+  Box,
+  Button,
+  TextField,
+  Typography,
+  IconButton,
+  InputAdornment,
+} from "@mui/material";
 import { inputLabelClasses } from "@mui/material/InputLabel";
 import PrimaryButton from "../../common/PrimaryButton/PrimaryButton";
 import { Link } from "react-router-dom";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 
 const ResetContent = () => {
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
+  const handleToggleNewPassword = () => {
+    setShowNewPassword(!showNewPassword);
+  };
+  const handleToggleConfirmPassword = () => {
+    setShowConfirmPassword(!showConfirmPassword);
+  };
+
   return (
     <Box className="md:basis-1/2 !w-full !max-w-[554px] !m-auto ">
       <Box>
         <Typography
           variant="inherit"
-          className=" !text-[--black] !font-bold !text-[32px]"
+          className=" !text-[--black] !font-bold Inter700 !text-[32px]"
         >
           Reset Password
         </Typography>
-        <Typography className=" !text-[--black] w-full lg:!text-base !text-xs !mb-6">
+        <Typography className=" !text-[--black] w-full Inter500 lg:!text-base !text-xs !mb-6">
           Choose a new password for your account
         </Typography>
       </Box>
@@ -38,7 +57,16 @@ const ResetContent = () => {
               padding: "15px",
             },
           }}
-          type="password"
+          type={showNewPassword ? "text" : "password"}
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <IconButton onClick={handleToggleNewPassword} edge="end">
+                  {showNewPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
+                </IconButton>
+              </InputAdornment>
+            ),
+          }}
         />
         <TextField
           fullWidth
@@ -58,7 +86,20 @@ const ResetContent = () => {
               padding: "15px",
             },
           }}
-          type="password"
+          type={showConfirmPassword ? "text" : "password"}
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <IconButton onClick={handleToggleConfirmPassword} edge="end">
+                  {showConfirmPassword ? (
+                    <VisibilityIcon />
+                  ) : (
+                    <VisibilityOffIcon />
+                  )}
+                </IconButton>
+              </InputAdornment>
+            ),
+          }}
         />
       </Box>
 
@@ -75,7 +116,7 @@ const ResetContent = () => {
         <Box className="!mt-7">
           <Button
             variant="outlined"
-            className="!py-[15px] !w-full !text-[--black] !flex !gap-2 !items-center !text-base !font-bold !capitalize !rounded-md !border-2 !border-black"
+            className="!py-[15px] !w-full !text-[--black] Inter700 !flex !gap-2 !items-center !text-base !font-bold !capitalize !rounded-md !border-2 !border-black"
           >
             Back to Login
           </Button>

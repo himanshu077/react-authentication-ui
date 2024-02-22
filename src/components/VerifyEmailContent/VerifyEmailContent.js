@@ -9,17 +9,17 @@ const VerifyEmailContent = () => {
         <Box>
           <Typography
             variant="inherit"
-            className=" !text-[--black] !font-bold !text-[32px]"
+            className=" !text-[--black] !font-bold Inter700 !text-[32px]"
           >
             Verify your Email
           </Typography>
-          <Typography className=" !text-[--black] w-full lg:!text-base !text-xs !mb-6">
+          <Typography className=" !text-[--black] w-full lg:!text-base Inter500 !text-xs !mb-6">
             We have sent a verification email to n****e@e***e.com.
           </Typography>
         </Box>
 
         <Box className="!grid  !mt-24">
-          <Typography className=" !text-[--black] w-full lg:!text-base !text-xs ">
+          <Typography className=" !text-[--black] w-full lg:!text-base Inter500 !text-xs ">
             Didn’t receive the email? Check spam or promotion folder or
           </Typography>
 
