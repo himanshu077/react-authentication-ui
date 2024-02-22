@@ -1,3 +1,4 @@
+@import url(./assets/fonts/all-fonts.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,6 +28,15 @@ body {
   --secondary: #e8faf7;
   --white: #ffffff;
   --black: black;
+  --int-thin: "Inter100";
+  --int-extraLight: "Inter200";
+  --int-light: "Inter300";
+  --int-regular: "Inter400";
+  --int-medium: "Inter500";
+  --int-semibold: "Inter600";
+  --int-bold: "Inter700";
+  --int-extraBold: "Inter800";
+  --int-black: "Inter900";
 }
 
 .divider {
