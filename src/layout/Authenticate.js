@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 
-const Authonicate = ({ LeftContent, RightContent }) => {
+const Authenticate = ({ LeftContent, RightContent }) => {
   return (
     <Box className="!flex !flex-row">
       <Box className=" block lg:basis-1/2 overflow-hidden sm:h-screen">
@@ -15,4 +15,4 @@ const Authonicate = ({ LeftContent, RightContent }) => {
   );
 };
 
-export default Authonicate;
+export default Authenticate;

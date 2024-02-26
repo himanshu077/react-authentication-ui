@@ -1,4 +1,4 @@
-import Authonicate from "../../layout/Authonicate";
+import Authenticate from "../../layout/Authenticate";
 import React from "react";
 import PasswordSuccessContent from "../../components/PasswordSuccessContent/PasswordSuccessContent";
 import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpContent";
@@ -6,7 +6,7 @@ import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpCont
 const PasswordSuccess = () => {
   return (
     <>
-      <Authonicate
+      <Authenticate
         LeftContent={<LeftSignUpContent />}
         RightContent={<PasswordSuccessContent />}
       />

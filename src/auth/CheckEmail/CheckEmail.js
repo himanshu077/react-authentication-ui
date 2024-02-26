@@ -1,4 +1,4 @@
-import Authonicate from "../../layout/Authonicate";
+import Authenticate from "../../layout/Authenticate";
 import React from "react";
 import CheckEmailContent from "../../components/CheckEmailContent/CheckEmailContent";
 import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpContent";
@@ -6,7 +6,7 @@ import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpCont
 const CheckEmail = () => {
   return (
     <>
-      <Authonicate
+      <Authenticate
         LeftContent={<LeftSignUpContent />}
         RightContent={<CheckEmailContent />}
       />

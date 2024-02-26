@@ -1,5 +1,5 @@
 import React from "react";
-import Authonicate from "../../layout/Authonicate";
+import Authenticate from "../../layout/Authenticate";
 import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpContent";
 import LoginRightContent from "../../components/LoginRightContent/LoginRightContent";
 // import LoginRightContent from "@/components/LoginRightContent/LoginRightContent";
@@ -7,7 +7,7 @@ import LoginRightContent from "../../components/LoginRightContent/LoginRightCont
 
 const SignIn = () => {
   return (
-    <Authonicate
+    <Authenticate
       LeftContent={<LeftSignUpContent />}
       RightContent={<LoginRightContent />}
     />

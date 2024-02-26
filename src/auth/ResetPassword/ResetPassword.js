@@ -1,4 +1,4 @@
-import Authonicate from "../../layout/Authonicate";
+import Authenticate from "../../layout/Authenticate";
 import React from "react";
 import ResetContent from "../../components/ResetContent/ResetContent";
 import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpContent";
@@ -6,7 +6,7 @@ import LeftSignUpContent from "../../components/LeftSignUpContent/LeftSignUpCont
 const ResetPassword = () => {
   return (
     <>
-      <Authonicate
+      <Authenticate
         LeftContent={<LeftSignUpContent />}
         RightContent={<ResetContent />}
       />
