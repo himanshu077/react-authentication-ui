@@ -1,75 +1,54 @@
-This project implements the authentication screens using react
+# React Authentication UI
 
-https://www.figma.com/file/HP0RmEGugRHP8u2ySuumsu/Essential-Authentication-Screens-(Community)?type=design&node-id=1-2&mode=design&t=cg5TbW9A6qQBTLwC-0
+Welcome to React Authentication UI, a project that includes authentication screens such as Login, Signup, Forgot Password, and Reset Password. This project is initialized using Create React App and utilizes Tailwind CSS for styling, Material UI as the component library, and React Router DOM for routing.
 
+## Preview
 
-# Getting Started with Create React App
+You can preview the design on Figma [here](https://www.figma.com/file/HP0RmEGugRHP8u2ySuumsu/Essential-Authentication-Screens-(Community)?type=design&node-id=1-2&mode=design).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The live version of this project is deployed and accessible [here](https://react-authentication-ui.vercel.app/).
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- **Create React App**: Create React App is a tool built by Facebook for quickly setting up a React project with a pre-configured build setup.
+- **Tailwind CSS**: Tailwind CSS is a utility-first CSS framework that helps in building custom designs quickly by providing low-level utility classes.
+- **Material UI**: Material UI is a popular React component library that provides a set of pre-designed and customizable components following Google's Material Design guidelines.
+- **React Router DOM**: React Router is a popular library for routing in React applications, enabling navigation between different components.
 
-### `npm start`
+## Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow these steps to install and run the project locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+```bash
+git clone https://github.com/himanshu077/react-authentication-ui.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate into the project directory:
 
-### `npm run build`
+```bash
+cd react-authentication-ui
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Run the development server:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Contributions are welcome! Feel free to open issues or pull requests to suggest features, report bugs, or make improvements.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
